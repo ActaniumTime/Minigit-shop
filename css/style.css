@@ -1,0 +1,165 @@
+/* Основной фон и текст */
+body {
+  background-color: #f8f9fa;
+  color: #333;
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
+/* Навигация */
+.navbar {
+  background-color: #1c1e26; /* Темный фон */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #36cfc9 !important;
+}
+
+.navbar-nav .nav-link {
+  color: #f0f0f0 !important;
+  font-weight: 500;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #36cfc9 !important;
+}
+
+.btn-outline-success {
+  border-color: #36cfc9;
+  color: #36cfc9;
+}
+
+.btn-outline-success:hover {
+  background-color: #36cfc9;
+  color: #fff;
+}
+
+/* Секция фильтров */
+select.form-select {
+  background-color: #fff;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  padding: 8px;
+  font-size: 1rem;
+  color: #555;
+  transition: border-color 0.3s ease;
+}
+
+select.form-select:focus {
+  border-color: #36cfc9;
+  box-shadow: 0 0 5px rgba(54, 207, 201, 0.5);
+}
+
+/* Карточки продуктов */
+.card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card-img-top {
+  border-bottom: 1px solid #eee;
+  transition: transform 0.3s ease;
+}
+
+.card-img-top:hover {
+  transform: scale(1.05);
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.card-text {
+  color: #666;
+  font-size: 1rem;
+}
+
+/* Кнопки */
+.btn-primary {
+  background-color: #36cfc9;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #2fa7a3;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-outline-primary {
+  border-radius: 25px;
+  border-color: #36cfc9;
+  color: #36cfc9;
+  font-size: 1rem;
+  transition: color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+  background-color: #36cfc9;
+  color: #fff;
+  border-color: #36cfc9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Модальные окна */
+.modal-content {
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.modal-header, .modal-footer {
+  background-color: #1c1e26;
+  color: #f0f0f0;
+}
+
+/* Подвал */
+footer {
+  background-color: #1c1e26;
+  color: #999;
+  padding: 20px 0;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .card-title {
+    font-size: 1rem;
+  }
+  .btn {
+    font-size: 0.9rem;
+  }
+}
+
+.swiper-slide {
+  height: auto !important;
+ }
+

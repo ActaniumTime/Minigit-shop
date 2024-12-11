@@ -1,0 +1,62 @@
+.card-body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card-body .mt-auto {
+    margin-top: auto; /* Указывает, что кнопки будут сдвигаться вниз */
+  }
+  
+  .card .btn {
+    border-radius: 7px; /* Можно сохранить текущие стили кнопок */
+  }
+  
+  .card .btn + .btn {
+    margin-top: 10px; /* Расстояние между кнопками */
+  }
+  
+  
+   .card-body .mt-auto {
+      display: flex;
+      justify-content: space-between; /* Равномерное распределение кнопок */
+  }
+  
+  .card-body .btn {
+      border-radius: 7px; /* Сохранение текущих стилей кнопок */
+      flex-grow: 1; /* Кнопки занимают одинаковую ширину */
+      text-align: center; /* Центрирование текста */
+  }
+  
+  .card-body .btn + .btn {
+      margin-left: 10px; /* Расстояние между кнопками */
+  }
+  
+  .card-body a {
+      color: inherit;
+      text-decoration: none; /* Убираем подчеркивание у ссылок */
+  }
+  
+  .card-body .mt-auto {
+    display: flex;
+    justify-content: space-between; /* Равномерное распределение кнопок */
+    align-items: stretch; /* Все кнопки равной высоты */
+  }
+  
+  .card-body .btn {
+    border-radius: 7px; /* Оставляем текущие стили кнопок */
+    flex-grow: 1; /* Все кнопки занимают одинаковую ширину */
+    text-align: center; /* Текст внутри кнопок выравнен по центру */
+    display: flex; /* Для центровки содержимого внутри */
+    align-items: center; /* Центрирование по вертикали */
+    justify-content: center; /* Центрирование по горизонтали */
+    max-height: 30px; /* Устанавливаем минимальную высоту кнопок */
+  }
+  
+  .card-body .btn + .btn {
+    margin-left: 10px; /* Расстояние между кнопками */
+  }
+  
+  .card-body a {
+    color: inherit;
+    text-decoration: none; /* Убираем подчеркивание у ссылок */
+  }

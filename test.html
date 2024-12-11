@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel with Zoom</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://via.placeholder.com/800x400" class="d-block w-100 zoom" alt="Slide 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://via.placeholder.com/800x400/FF0000/FFFFFF" class="d-block w-100 zoom" alt="Slide 2">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Подключение Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Подключение Zoom.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/zoom.js/0.3.2/zoom.min.js"></script>
+    <!-- Скрипт активации Zoom.js -->
+    <script>
+        document.querySelectorAll('.zoom').forEach(img => {
+            img.addEventListener('click', () => {
+                zoom.to({ element: img });
+            });
+        });
+    </script>
+</body>
+</html>
